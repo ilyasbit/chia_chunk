@@ -27,7 +27,7 @@ echo "" >rclone.conf
 
 jq -c '.[]' config.json | parallel --bar generate_rclone_config {}
 
-#grep "\-CRYPT]" rclone.conf | parallel -j 10 --bar force_create_bucket {}
+grep "\-CRYPT]" rclone.conf | parallel -j 10 --bar force_create_bucket {}
 
 #generate union Mount
 
