@@ -1,7 +1,7 @@
 #!/bin/bash
 file=$1
 log_path=$HOME/worker/log/mount
-
+mkdir /storj-bucket
 mkdir -p $log_path
 
 while true; do
